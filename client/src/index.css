@@ -1,0 +1,277 @@
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@600&display=swap");
+* {
+  box-sizing: border-box;
+}
+body {
+  margin: 0;
+  font-family: "DM Sans", sans-serif;
+  background: #f7f5f0;
+  color: #1d211f;
+}
+a {
+  text-decoration: none;
+  color: inherit;
+}
+.app {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+.nav {
+  height: 72px;
+  background: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 7%;
+  border-bottom: 1px solid #e7e3db;
+}
+.brand {
+  font-family: "Playfair Display", serif;
+  font-size: 28px;
+  font-weight: 600;
+}
+.links {
+  display: flex;
+  gap: 26px;
+}
+.links a {
+  color: #666;
+}
+.links a.active {
+  color: #111;
+  font-weight: 700;
+}
+.hero {
+  min-height: calc(100vh - 120px);
+  display: flex;
+  align-items: center;
+  padding: 7% 10%;
+  background: radial-gradient(circle at 80% 30%, #e4eadf 0, transparent 38%);
+}
+.eyebrow {
+  font-size: 12px;
+  letter-spacing: 2px;
+  font-weight: 700;
+  color: #5b765a;
+}
+.hero h1 {
+  font-family: "Playfair Display", serif;
+  font-size: 64px;
+  line-height: 1.05;
+  margin: 14px 0;
+}
+.hero h1 em {
+  color: #5b765a;
+  font-style: normal;
+}
+.hero p {
+  max-width: 560px;
+  color: #666;
+  font-size: 17px;
+  line-height: 1.7;
+}
+.actions {
+  display: flex;
+  gap: 12px;
+  margin-top: 28px;
+}
+.button {
+  display: inline-block;
+  border: 0;
+  background: #1d211f;
+  color: white;
+  padding: 12px 20px;
+  border-radius: 8px;
+  font: inherit;
+  cursor: pointer;
+}
+.button.secondary {
+  background: #e5e3dc;
+  color: #222;
+}
+.page {
+  max-width: 1100px;
+  width: 90%;
+  margin: 50px auto;
+}
+.narrow {
+  max-width: 760px;
+}
+.page h2 {
+  font-family: "Playfair Display", serif;
+  font-size: 44px;
+  margin: 8px 0;
+}
+.pagehead {
+  display: flex;
+  justify-content: space-between;
+}
+.stats {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 16px;
+  margin: 28px 0;
+}
+.stats div {
+  background: #fff;
+  border: 1px solid #e7e3db;
+  border-radius: 12px;
+  padding: 20px;
+}
+.stats b {
+  font-size: 28px;
+  display: block;
+}
+.stats span {
+  color: #777;
+}
+.filters {
+  display: flex;
+  gap: 12px;
+  margin: 20px 0;
+}
+.filters input,
+.filters select,
+.form input,
+.application select {
+  padding: 12px;
+  border: 1px solid #d9d6ce;
+  border-radius: 8px;
+  background: #fff;
+  font: inherit;
+}
+.filters input {
+  flex: 1;
+}
+.grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 18px;
+}
+.card,
+.detailbox,
+.application {
+  background: #fff;
+  border: 1px solid #e7e3db;
+  border-radius: 12px;
+  padding: 22px;
+}
+.card h3 {
+  font-size: 21px;
+  margin: 10px 0 5px;
+}
+.company {
+  font-weight: 700;
+}
+.pill {
+  display: inline-block;
+  padding: 5px 9px;
+  border-radius: 99px;
+  background: #e7eee5;
+  color: #4c694c;
+  font-size: 12px;
+  font-weight: 700;
+}
+.count {
+  color: #777;
+}
+.detailbox {
+  margin: 25px 0;
+  line-height: 1.7;
+}
+.form {
+  display: grid;
+  gap: 16px;
+  background: #fff;
+  padding: 24px;
+  border: 1px solid #e7e3db;
+  border-radius: 12px;
+  margin: 22px 0;
+}
+.form label {
+  display: grid;
+  gap: 7px;
+  font-weight: 600;
+}
+.application-list {
+  display: grid;
+  gap: 14px;
+  margin-top: 24px;
+}
+.application {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+}
+.application h3 {
+  margin: 0 0 6px;
+}
+.application select {
+  margin-right: 8px;
+}
+.delete {
+  border: 0;
+  background: #f3dede;
+  color: #8c3333;
+  padding: 10px 12px;
+  border-radius: 8px;
+  cursor: pointer;
+}
+.state {
+  text-align: center;
+  padding: 100px 20px;
+}
+.error {
+  color: #a33;
+}
+footer {
+  margin-top: auto;
+  padding: 22px;
+  text-align: center;
+  color: #777;
+  border-top: 1px solid #e7e3db;
+  background: #fff;
+  font-size: 13px;
+}
+@media (max-width: 700px) {
+  .nav {
+    height: auto;
+    padding: 18px 5%;
+    align-items: flex-start;
+    gap: 15px;
+  }
+  .links {
+    gap: 12px;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+    font-size: 14px;
+  }
+  .hero {
+    padding: 18% 7%;
+  }
+  .hero h1 {
+    font-size: 46px;
+  }
+  .grid,
+  .stats {
+    grid-template-columns: 1fr;
+  }
+  .filters {
+    flex-direction: column;
+  }
+  .application {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .application select {
+    margin: 0 8px 0 0;
+  }
+  .page {
+    margin: 35px auto;
+  }
+  .page h2 {
+    font-size: 36px;
+  }
+}
